@@ -1,0 +1,10 @@
+<h1> All Tools </h1>
+
+<%= link_to "Log In", login_path %>
+
+<%= link_to "Create New Tool", new_tool_path  %> <br><br>
+
+<% @tools.each do |tool| %>
+  <%= link_to "#{tool.name}", tool %>
+  <%= tool.quantity %><br>
+  <% end %>

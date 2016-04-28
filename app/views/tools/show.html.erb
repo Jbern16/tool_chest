@@ -1,0 +1,6 @@
+<div class="tool_info">
+  <h1> <%= @tool.name %> - <%= @tool.quantity %></h1>
+  <h3> $<%= @tool.price.to_f %> </h3>
+  <%= link_to "Edit", edit_tool_path  %><br><br>
+  <%= link_to "Delete Tool", tool_path, method: :delete %>
+</div>

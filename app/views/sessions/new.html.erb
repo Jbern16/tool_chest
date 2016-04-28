@@ -1,0 +1,8 @@
+<h1> Log In! </h1>
+
+<%= form_for :session, url: login_path do |f| %>
+  <%= f.text_field :username %>
+  <%= f.password_field :password %>
+
+  <%= f.submit "Click to Log In!" %>
+  <% end %>
